@@ -5,6 +5,7 @@ from langchain_classic.embeddings import CacheBackedEmbeddings
 from langchain_classic.storage import LocalFileStore
 from langchain_core.documents import Document
 from langchain_openai import OpenAIEmbeddings
+from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_qdrant import QdrantVectorStore
 from qdrant_client import QdrantClient
 from qdrant_client.models import Distance, VectorParams
@@ -17,7 +18,7 @@ EMBEDDING_DIM = 1536  # text-embedding-3-small
 
 # ── Singletons ────────────────────────────────────────────────────────────────
 
-base_embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
+base_embeddings = GoogleGenerativeAIEmbeddings(model="gemini-embedding-001")
 embedding_file_store = LocalFileStore("./embedding_cache/")
 embeddings = CacheBackedEmbeddings.from_bytes_store(
     base_embeddings,
