@@ -18,7 +18,7 @@ EMBEDDING_DIM = 1536  # text-embedding-3-small
 
 # ── Singletons ────────────────────────────────────────────────────────────────
 
-base_embeddings = GoogleGenerativeAIEmbeddings(model="gemini-embedding-001")
+base_embeddings = GoogleGenerativeAIEmbeddings(model="gemini-embedding-001",output_dimensionality=EMBEDDING_DIM)
 embedding_file_store = LocalFileStore("./embedding_cache/")
 embeddings = CacheBackedEmbeddings.from_bytes_store(
     base_embeddings,
