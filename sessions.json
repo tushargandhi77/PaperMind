@@ -4,5 +4,11 @@
     "name": "Basic math exploration",
     "created_at": "2026-09-28T20:32:20.599188",
     "is_named": true
+  },
+  "1b66ce03-9760-49fe-b971-4428cb8fc0df": {
+    "id": "1b66ce03-9760-49fe-b971-4428cb8fc0df",
+    "name": "Jobs list from docs",
+    "created_at": "2026-10-03T13:26:40.871783",
+    "is_named": true
   }
 }

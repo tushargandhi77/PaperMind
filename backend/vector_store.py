@@ -14,7 +14,7 @@ load_dotenv()
 
 # ── Config ───────────────────────────────────────────────────────────────────
 
-EMBEDDING_DIM = 1536  # text-embedding-3-small
+EMBEDDING_DIM = 3072  # text-embedding-3-small
 
 # ── Singletons ────────────────────────────────────────────────────────────────
 
